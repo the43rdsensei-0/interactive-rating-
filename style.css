@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.container-inner {
+    max-width: 350px;
+    width: 100vw;
+    background: hsl(213, 19%, 18%);
+    padding: 1.5em;
+    border-radius: 20px;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    padding: 1em .95em;
+    border-radius: 50%;
+    background: hsl(213, 22%, 28%);
+    margin-bottom: 2.5em;
+}
+
+.star img  {
+    width: 17px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    height: 50px;
+}
+
+.ratings-btn {
+    border-radius: 50%;
+    background: hsl(213, 22%, 28%);
+    border: none;
+    padding: .4em 1.6em;
+    color: hsl(216, 12%, 54%);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    text-align: center;
+    line-height: 20px;
+}
+
+.ratings-btn:hover {
+    background: hsl(216, 12%, 54%);
+    color: #fff;
+}
+
+.ratings-btn:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+} 
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 20px;
+    border: none;
+    background: hsl(25, 97%, 53%);
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-inner {
+    text-align: center;
+}
+
+.report {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: .2em .3em;
+    border-radius: 20px;
+    background: hsl(213, 22%, 28%);
+    color: hsl(25, 97%, 53%);
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ====================
+    typography
+=================== */
+
+
+h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    line-height: 1.4em;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
